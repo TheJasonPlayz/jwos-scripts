@@ -1,0 +1,11 @@
+otf-raleway
+ttf-mononoki
+ttf-ms-fonts
+ 
+clearine-git
+playerctl
+mkinitcpio-firmware 
+ 
+xmonad-git 
+xmonad-contrib-git
+xmobar-git
