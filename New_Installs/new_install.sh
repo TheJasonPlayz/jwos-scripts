@@ -26,12 +26,12 @@ if [ "$(id -u)" = 0 ]; then
     exit 1
 fi
 
-grep -v " " main_pkglist.txt > ~/.main.txt
-grep -v " " aur_pkglist.txt > ~/.aur.txt
+grep -v " " ./lists/main_pkglist.txt > ~/.main.txt
+grep -v " " ./lists/aur_pkglist.txt > ~/.aur.txt
 
 sudo pacman --needed --ask 4 -Sy - < ~/.main.txt
 
-#install_aur yay
+install_aur yay
 yay -Say --needed --useask --ask 4 - < ~/.aur.txt
 
 rm -rf ~/.main.txt ~/.aur.txt

@@ -1,5 +1,5 @@
 #!/bin/bash
-dotfiles=$HOME/.git/dotfiles
+dotfiles=$HOME/.git/jwos-dotfiles
 
 # MAKE MACHINE CONFIG DIRECTORIES
 mkdir ~/.xmonad/

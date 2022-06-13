@@ -3,10 +3,6 @@
 git config --global user.email "thejasonplayz@gmail.com"
 git config --global user.name "TheJasonPlayz"
 
-# CLONE DOTFILES REPO\
-mkdir ~/.git/
-git clone https://github.com/TheJasonPlayz/dotfiles.git ~/.git/dotfiles/
-
 # REMOVE LIGHTDM CACHE
 sudo rm -r /var/cache/lightdm
 
