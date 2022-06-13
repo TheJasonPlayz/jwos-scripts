@@ -29,7 +29,7 @@ then
     cp $dotfiles/configs/xmobar/.xmobarrc ~/
 
     # COPY ROFI CONFIGS
-    cp $dotfiles/configs/rofi/config.rasi ~/.config/rofi/
+    cp $dotfiles/configs/rofi/ ~/.config/rofi/
 
     # COPY NITROGEN CONFIGS
     cp -r $dotfiles/configs/nitrogen/ ~/.config/nitrogen/
