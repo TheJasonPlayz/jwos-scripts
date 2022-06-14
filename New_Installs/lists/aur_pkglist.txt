@@ -8,4 +8,3 @@ mkinitcpio-firmware
  
 xmonad-git 
 xmonad-contrib-git
-xmobar-git

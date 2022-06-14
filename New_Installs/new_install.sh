@@ -28,12 +28,15 @@ fi
 
 grep -v " " ./lists/main_pkglist.txt > ~/.main.txt
 grep -v " " ./lists/aur_pkglist.txt > ~/.aur.txt
+grep -v " " ./lists/single_aur_pkglist.txt > ~/.single.aurs.txt
 
 sudo pacman --needed --ask 4 -Sy - < ~/.main.txt
 
-install_aur yay
-yay -Say --needed --useask --ask 4 - < ~/.aur.txt
+#install_aur yay
+#yay -Say --needed --useask --ask 4 - < ~/.aur.txt
 
-rm -rf ~/.main.txt ~/.aur.txt
+yay -Say --needed - < ~/.single.aurs.txt
+
+rm -rf ~/.main.txt ~/.aur.txt ~/.single.aurs.txt
 
 #source ./config.sh
