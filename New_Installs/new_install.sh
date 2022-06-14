@@ -35,7 +35,7 @@ sudo pacman --needed --ask 4 -Sy - < ~/.main.txt
 #install_aur yay
 #yay -Say --needed --useask --ask 4 - < ~/.aur.txt
 
-yay -Say --needed - < ~/.single.aurs.txt
+yay -S - < ~/.single.aurs.txt
 
 rm -rf ~/.main.txt ~/.aur.txt ~/.single.aurs.txt
 

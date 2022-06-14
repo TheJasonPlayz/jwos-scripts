@@ -11,8 +11,8 @@ git clone https://github.com/TheJasonPlayz/dotfiles.git ~/.git/dotfiles/
 sudo rm -r /var/cache/lightdm
 
 #INSTALL DOOM EMACS
-git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
-~/.emacs.d/bin/doom install
+#git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
+#~/.emacs.d/bin/doom install
 
 #INSTALL BACKGROUNDS / USER DIRS
 xdg-user-dirs-update
