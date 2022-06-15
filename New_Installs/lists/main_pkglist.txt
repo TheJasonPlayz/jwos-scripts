@@ -78,3 +78,7 @@ xorg-xinit
 xorg-drivers
 lxappearance
  
+pulseaudio-equalizer
+pulseaudio-alsa
+alsa-utils
+
