@@ -32,8 +32,8 @@ grep -v " " ./lists/single_aur_pkglist.txt > ~/.single.aurs.txt
 
 sudo pacman --needed --ask 4 -Sy - < ~/.main.txt
 
-#install_aur yay
-#yay -Say --needed --useask --ask 4 - < ~/.aur.txt
+install_aur yay
+yay -Say --needed --useask --ask 4 - < ~/.aur.txt
 
 yay -S - < ~/.single.aurs.txt
 

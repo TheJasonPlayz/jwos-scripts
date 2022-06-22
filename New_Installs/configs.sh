@@ -1,5 +1,6 @@
 #!/bin/bash
 dotfiles=$HOME/.git/jwos-dotfiles
+configs=$HOME/.git/jwos-dotfiles/.config
 
 # MAKE MACHINE CONFIG DIRECTORIES
 mkdir ~/.xmonad/
@@ -9,36 +10,36 @@ if [ $1 = "copytorepo" ]
 then
     # COPY XMONAD / XMOBAR CONFIGS
     cp ~/.xmonad/xmonad.hs $dotfiles/.xmonad/
-    cp ~/.xmobarrc $dotfiles/configs/xmobar/
+    cp ~/.xmobarrc $configs/xmobar/
 
     # COPY ROFI CONFIGS
-    cp -r ~/.config/rofi/config.rasi $dotfiles/configs/rofi/
+    cp -r ~/.config/rofi/* $configs/rofi/
 
     # COPY NITROGEN CONFIGS
-    cp -r ~/.config/nitrogen/ $dotfiles/configs/nitrogen/
+    cp -r ~/.config/nitrogen/ $configs/nitrogen/
     
     # COPY DOOM CONFIGS
-    cp -r ~/.doom.d/ $dotfiles/configs/doom/
+    cp -r ~/.doom.d/* $configs/.doom.d/
 
     # COPY BASH CONFIG
-    cp ~/.bashrc $dotfiles/configs/bash/
+    cp ~/.bashrc $configs/bash/
 elif [ $1 = "copyfromrepo" ]
 then
     # COPY XMONAD / XMOBAR CONFIGS
     cp $dotfiles/.xmonad/xmonad.hs ~/.xmonad/
-    cp $dotfiles/configs/xmobar/.xmobarrc ~/
+    cp $configs/xmobar/.xmobarrc ~/
 
     # COPY ROFI CONFIGS
-    cp -r $dotfiles/configs/rofi/ ~/.config/rofi/
+    cp -r $configs/rofi/* ~/.config/rofi/
 
     # COPY NITROGEN CONFIGS
-    cp -r $dotfiles/configs/nitrogen/ ~/.config/nitrogen/
+    cp -r $configs/nitrogen/* ~/.config/nitrogen/
 
     # COPY DOOM CONFIGS
-    cp -r $dotfiles/configs/doom/.doom.d ~/.doom.d/
+    cp -r $configs/.doom.d/* ~/.doom.d/
 
     # COPY BASH CONFIG
-    cp $dotfiles/configs/bash/.bashrc ~/
+    cp $configs/bash/.bashrc ~/
 else
     echo 'Input not correct. Please try again'
     exit 1
