@@ -9,7 +9,7 @@ mkdir ~/.config/rofi/
 if [ $1 = "copytorepo" ]
 then
     # COPY XMONAD / XMOBAR CONFIGS
-    cp ~/.xmonad/xmonad.hs $dotfiles/.xmonad/
+    cp ~/.xmonad/* $dotfiles/.xmonad/
     cp ~/.xmobarrc $configs/xmobar/
 
     # COPY ROFI CONFIGS
