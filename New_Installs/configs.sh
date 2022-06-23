@@ -23,6 +23,9 @@ then
 
     # COPY BASH CONFIG
     cp ~/.bashrc $configs/bash/
+
+    # COPY PULSEAUDIO CONFIGS
+    cp -r /etc/pulse/* $configs/pulse/
 elif [ $1 = "copyfromrepo" ]
 then
     # COPY XMONAD / XMOBAR CONFIGS
@@ -40,6 +43,9 @@ then
 
     # COPY BASH CONFIG
     cp $configs/bash/.bashrc ~/
+
+    # COPY PULSEAUDIO CONFIGS
+    cp -r -r $configs/pulse/* /etc/pulse/
 else
     echo 'Input not correct. Please try again'
     exit 1
