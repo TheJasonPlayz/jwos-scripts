@@ -9,7 +9,7 @@ mkdir ~/.config/rofi/
 if [ $1 = "copytorepo" ]
 then
     # COPY XMONAD / XMOBAR CONFIGS
-    cp ~/.xmonad/* $dotfiles/.xmonad/
+    cp -r  ~/.xmonad/* $dotfiles/.xmonad/
     cp ~/.xmobarrc $configs/xmobar/
 
     # COPY ROFI CONFIGS
@@ -29,7 +29,7 @@ then
 elif [ $1 = "copyfromrepo" ]
 then
     # COPY XMONAD / XMOBAR CONFIGS
-    cp $dotfiles/.xmonad/xmonad.hs ~/.xmonad/
+    cp -r $dotfiles/.xmonad/xmonad.hs ~/.xmonad/
     cp $configs/xmobar/.xmobarrc ~/
 
     # COPY ROFI CONFIGS
