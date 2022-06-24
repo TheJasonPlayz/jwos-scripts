@@ -11,6 +11,7 @@ then
     # COPY XMONAD / XMOBAR CONFIGS
     cp -r  ~/.xmonad/* $dotfiles/.xmonad/
     cp ~/.xmobarrc $configs/xmobar/
+    cp -r ~/.local/bin $dotfiles/
 
     # COPY ROFI CONFIGS
     cp -r ~/.config/rofi/* $configs/rofi/
@@ -28,9 +29,10 @@ then
     cp -r /etc/pulse/* $configs/pulse/
 elif [ $1 = "copyfromrepo" ]
 then
-    # COPY XMONAD / XMOBAR CONFIGS
+    # COPY XMONAD / XMONAD SCRIPTS / XMOBAR CONFIGS
     cp -r $dotfiles/.xmonad/xmonad.hs ~/.xmonad/
     cp $configs/xmobar/.xmobarrc ~/
+    cp -r $dotfiles/.local/bin/ ~/.local/
 
     # COPY ROFI CONFIGS
     cp -r $configs/rofi/* ~/.config/rofi/
