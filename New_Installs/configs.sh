@@ -11,7 +11,7 @@ then
     # COPY XMONAD / XMOBAR CONFIGS
     cp -r  ~/.xmonad/* $dotfiles/.xmonad/
     cp ~/.xmobarrc $configs/xmobar/
-    cp -r ~/.local/bin $dotfiles/
+    cp -r ~/.local/bin $dotfiles/.local/
 
     # COPY ROFI CONFIGS
     cp -r ~/.config/rofi/* $configs/rofi/
