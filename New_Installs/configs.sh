@@ -9,11 +9,9 @@ mkdir ~/.config/rofi/
 if [ $1 = "copytorepo" ]
 then
     # COPY XMONAD / XMOBAR CONFIGS
-<<<<<<< HEAD
     cp -r ~/.xmonad/* $dotfiles/.xmonad/
-=======
     cp -r  ~/.xmonad/* $dotfiles/.xmonad/
->>>>>>> bcd13e9558104c2d634efe17e5a131db1ff73635
+
     cp ~/.xmobarrc $configs/xmobar/
     cp -r ~/.local/bin $dotfiles/.local/
 
@@ -33,11 +31,7 @@ then
     cp -r /etc/pulse/* $configs/pulse/
 elif [ $1 = "copyfromrepo" ]
 then
-<<<<<<< HEAD
-    # COPY XMONAD / XMOBAR CONFIGS
-=======
     # COPY XMONAD / XMONAD SCRIPTS / XMOBAR CONFIGS
->>>>>>> bcd13e9558104c2d634efe17e5a131db1ff73635
     cp -r $dotfiles/.xmonad/xmonad.hs ~/.xmonad/
     cp $configs/xmobar/.xmobarrc ~/
     cp -r $dotfiles/.local/bin/ ~/.local/
