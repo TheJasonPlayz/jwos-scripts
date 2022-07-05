@@ -5,6 +5,7 @@ configs=$HOME/.git/jwos-dotfiles/.config
 # MAKE MACHINE CONFIG DIRECTORIES
 mkdir ~/.xmonad/
 mkdir ~/.config/rofi/
+mkdir ~/.config/xmobar/
 
 if [ $1 = "copytorepo" ]
 then
@@ -12,7 +13,7 @@ then
     cp -r ~/.xmonad/* $dotfiles/.xmonad/
     cp -r  ~/.xmonad/* $dotfiles/.xmonad/
 
-    cp ~/.xmobarrc $configs/xmobar/
+    cp ~/.config/xmobar/* $configs/xmobar/
     cp -r ~/.local/bin $dotfiles/.local/
 
     # COPY ROFI CONFIGS
@@ -33,7 +34,7 @@ elif [ $1 = "copyfromrepo" ]
 then
     # COPY XMONAD / XMONAD SCRIPTS / XMOBAR CONFIGS
     cp -r $dotfiles/.xmonad/xmonad.hs ~/.xmonad/
-    cp $configs/xmobar/.xmobarrc ~/
+    cp $configs/xmobar/* ~/.config/xmobar/
     cp -r $dotfiles/.local/bin/ ~/.local/
 
     # COPY ROFI CONFIGS
