@@ -30,6 +30,11 @@ then
 
     # COPY PULSEAUDIO CONFIGS
     cp -r /etc/pulse/* $configs/pulse/
+
+    cd ~/.git/jwos-dotfiles/
+    git add -A 
+    git commit -m 'automatic update'
+    git push
 elif [ $1 = "copyfromrepo" ]
 then
     # COPY XMONAD / XMONAD SCRIPTS / XMOBAR CONFIGS
@@ -50,7 +55,7 @@ then
     cp $configs/bash/.bashrc ~/
 
     # COPY PULSEAUDIO CONFIGS
-    cp -r -r $configs/pulse/* /etc/pulse/
+    sudo cp -r $configs/pulse/* /etc/pulse/
 else
     echo 'Input not correct. Please try again'
     exit 1
