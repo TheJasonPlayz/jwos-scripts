@@ -38,7 +38,7 @@ then
 elif [ $1 = "copyfromrepo" ]
 then
     # COPY XMONAD / XMONAD SCRIPTS / XMOBAR CONFIGS
-    cp -r $dotfiles/.xmonad/xmonad.hs ~/.xmonad/
+    cp -r $dotfiles/.xmonad/* ~/.xmonad/
     cp $configs/xmobar/* ~/.config/xmobar/
     cp -r $dotfiles/.local/bin/ ~/.local/
 
